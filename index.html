@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>My Profile Page</title>
+</head>
+<body>
+    <section class="showcase">
+        <header>
+            <h1 class="logo myname">Anandhu S Nair</h1>
+            <div class="toggle"></div>
+        </header>
+
+        <video src="video.mp4" muted loop autoplay></video>
+
+        <div class="overlay"></div>
+
+        <div class="text">
+            <h2>Declare Variables</h2>
+            <h3>Not Wars</h3>
+            <p>A Computer Science Engineer from under the hood of KTU's 2016-2020 batch. Currently pursuing web technologies from various platforms available on internet.</p>
+            <a href="#">Explore</a>
+        </div>
+
+        <ul class="social">
+            <li><a href="#"></a><img src="facebook.png" alt="" width="10px"></a></li>
+            <li><a href="#"></a><img src="twitter.png" alt="" width="30px"></a></li>
+            <li><a href="#"></a><img src="instagram.png" alt="" width="20px"></a></li>
+        </ul>
+    </section>
+
+    <div class="menu">
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Academics</a></li>
+            <li><a href="#">Achievements</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">Contact</a></li>
+
+        </ul>
+    </div>
+
+    <script>
+        const menuToggle = document.querySelector('.toggle')
+        const showcase = document.querySelector('.showcase')
+
+        menuToggle.addEventListener('click', () => {
+            menuToggle.classList.toggle('active')
+            showcase.classList.toggle('active')
+        })
+    </script>
+</body>
+</html>
